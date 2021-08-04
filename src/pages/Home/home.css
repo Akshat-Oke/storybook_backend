@@ -1,0 +1,209 @@
+/* get Lora font */
+.word-space {
+  width: 6px;
+}
+.overlay-flip {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: orangered;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.page1 {
+  z-index: 1;
+  position: relative;
+  height: 101vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.home__background1 {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary-light);
+  clip-path: polygon(100% 0, 100% 61%, 72% 100%, 0 79%, 0 0);
+}
+.landing-image {
+  transition: 0.3s;
+  filter: saturate(40%);
+}
+.landing-image:hover {
+  filter: saturate(90%);
+}
+.landing-image,
+.landing-image > * {
+  /* aspect-ratio: 2 / 3; */
+  width: 460px;
+  height: 85vh;
+}
+.home__left {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.home__heading {
+  font-size: 7rem;
+  color: var(--color-heading);
+  font-family: "Cormorant SC", serif;
+  font-weight: 300;
+}
+.home__heading-text * {
+  font-family: "Lora", serif;
+  font-size: 2.6rem;
+  color: rgb(71, 78, 78);
+  display: table;
+}
+.home__heading-your {
+  display: table-cell;
+  padding: 0 15px;
+}
+.title-text {
+  letter-spacing: 3px;
+  position: relative;
+  display: table;
+}
+.animation-text span {
+  /* position: relative; */
+  /* display: block; */
+  display: table-cell;
+  clear: none;
+}
+/* /////////////////////// */
+/* Page 2 */
+.page2 {
+  overflow: hidden;
+  margin-top: 100vh;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  clip-path: polygon(0 100%, 0% 30%, 28% 0%, 100% 21%, 100% 100%);
+  /* background-color: darkseagreen; */
+}
+.blob {
+  position: absolute;
+  bottom: 60%;
+  left: 2%;
+  z-index: 0;
+  /* margin: 0; */
+  /* padding: 0; */
+  height: 400px;
+  width: 400px;
+  animation: float 130s infinite alternate linear;
+  /* border-radius: 50%; */
+}
+.blob_3 {
+  bottom: 1vh;
+  right: 5vw;
+  left: unset;
+  animation: float2 200s infinite alternate linear;
+}
+.blob_1 {
+  top: 6vh;
+  right: 0;
+}
+@keyframes float {
+  0%,
+  100% {
+    /* transform-origin: 70% 50%; */
+    /* transform: rotateZ(0deg) translate(200px, 180px); */
+    transform: rotate(-60deg) translate(-30px, 230px);
+  }
+  40% {
+    /* transform-origin: 70% 100%; */
+    transform: rotateZ(0deg) translate(30px, 0px);
+  }
+  70% {
+    /* transform-origin: 70% 100%; */
+    transform: rotateZ(-90deg) translate(60px, -100px);
+  }
+}
+@keyframes float2 {
+  0%,
+  100% {
+    transform: rotateZ(0deg) translate(0px, 50px);
+  }
+  40% {
+    transform: rotateZ(100deg) translate(-90px, -50px);
+  }
+  70% {
+    transform: rotateZ(200deg) translate(20px, 0px);
+  }
+}
+
+.page2::after {
+  content: "";
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary-light);
+  clip-path: polygon(0 100%, 0% 30%, 28% 0%, 100% 21%, 100% 100%);
+  /* clip-path: polygon(100% 0, 100% 61%, 72% 100%, 0 79%, 0 0); */
+}
+.page2__left {
+  position: relative;
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page2__landing-image {
+  height: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 400px;
+  width: 100%;
+  height: 75%;
+  overflow: hidden; */
+}
+.page2__feature-image {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  border-radius: 5px;
+  /* box-shadow: ; */
+}
+.page2__divider-line {
+  /* align-self: flex-start; */
+  width: 3px;
+  background-color: white;
+  max-height: 75vh;
+  /* height: 50vh; */
+  height: 0;
+  z-index: 2;
+  /* transform: translateX(-50px); */
+}
+.page2__right {
+  width: 27vw;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Cormorant SC", serif;
+  font-weight: 400;
+  z-index: 2;
+}
+.page2__right__text:not(:last-child) {
+  margin-bottom: 10px;
+}

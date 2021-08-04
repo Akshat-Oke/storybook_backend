@@ -1,0 +1,6 @@
+.stories__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+}

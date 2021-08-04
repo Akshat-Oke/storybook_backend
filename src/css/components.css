@@ -1,0 +1,8 @@
+.btn {
+  outline: none;
+  border: 2px solid var(--color-black);
+  padding: 8px 10px;
+  margin: 10px;
+  margin-left: 0;
+  max-width: max-content;
+}

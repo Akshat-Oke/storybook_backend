@@ -1,0 +1,41 @@
+.story-detail-page {
+  height: max-content;
+  display: block;
+
+  position: relative;
+}
+.story-detail-page__heading h2 {
+  display: block;
+
+  text-align: left;
+  font-family: "Cormorant SC", serif;
+  font-weight: 400;
+  font-size: 5rem;
+  color: var(--color-heading);
+}
+.story-detail-page__heading {
+  /* position: absolute; */
+  width: 100%;
+  display: block;
+  padding: 5%;
+  padding-right: 10%;
+  padding-top: 100px;
+  background: var(--color-primary-light);
+  background-size: 100% 40vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.story-detail-page__heading img {
+  display: block;
+
+  max-width: 520px;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.2);
+}
+.story-detail-page__message {
+  padding: 40px;
+  font-size: 2.4rem;
+  color: var(--color-black);
+}

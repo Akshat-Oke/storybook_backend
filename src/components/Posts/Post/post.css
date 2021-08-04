@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  box-shadow: 3px 3px 17px 1px rgba(0, 0, 0, 0.17);
+  /* min-height: 240px; */
+  height: min-content;
+  /* max-height: 300px; */
+  margin: 30px;
+  width: 25%;
+  border-radius: 4px;
+  transition: 0.3s;
+  padding-bottom: 10px;
+}
+.card:hover {
+  transform: translateY(8px) scale(1.05);
+}
+
+.post__header {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.post__header__image {
+  max-height: 180px;
+  overflow: hidden;
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+.card:hover .post__header__image {
+  filter: brightness(1);
+}
+.post__header img {
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  transition: 0.3s;
+}
+.card:hover .post__header img {
+  transform: scale(1.1);
+}
+.post__header__title {
+  font-family: "Merriweather", serif;
+  font-size: 3.4rem;
+  line-height: 1.2;
+  padding: 15px 12px;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid var(--muted-text-color); */
+  color: var(--color-heading);
+}
+.post__header__title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.post__body {
+  padding: 0 1.4rem;
+}
+.post__data {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.9rem;
+  color: var(--color-primary-dark);
+}
+.post__message {
+  font-size: 2.3rem;
+  padding-bottom: 10px;
+}
+.post__actions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

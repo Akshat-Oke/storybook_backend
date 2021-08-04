@@ -1,0 +1,67 @@
+.storybook-logo {
+  height: 100%;
+  max-width: 90vh;
+  max-width: 365px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  /* overflow: hidden; */
+}
+.storybook-logo__line {
+  border-left: 2px solid black;
+  height: 105%;
+}
+.storybook-logo__icon {
+  z-index: 3;
+  height: 100%;
+  margin-right: 6%;
+  fill: url(#logo-gradient);
+}
+.storybook-logo__icon svg {
+  height: 100%;
+}
+.storybook-logo__title {
+  z-index: 1;
+  padding-left: 9%;
+  border-left: 2px solid black;
+  position: relative;
+  /* overflow: hidden; */
+  color: black;
+  font-size: 5rem;
+  /* flex: 5; */
+  height: 160%;
+}
+.title--true {
+  font-size: 3.8rem;
+}
+.storybook-logo__title h2 {
+  font-family: "Cormorant SC", serif;
+  font-weight: 300;
+  width: max-content;
+}
+.storybook-logo__title::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  left: -101%;
+  top: 0;
+  background: var(--color-primary-light);
+}
+.storybook-logo__title h2 {
+  color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: none;
+}
+h2.storybook-logo__title--hidden {
+  display: block;
+  position: relative;
+  user-select: none;
+  visibility: hidden;
+}
